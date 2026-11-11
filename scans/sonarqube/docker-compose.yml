@@ -1,0 +1,22 @@
+# SonarQube Community Build (gratuito) para o lab
+# Subir:   docker compose -f scans/sonarqube/docker-compose.yml up -d
+# Parar:   docker compose -f scans/sonarqube/docker-compose.yml stop
+# Acesso:  http://localhost:9000
+services:
+  sonarqube:
+    image: sonarqube:community
+    container_name: sonarqube-lab
+    ports:
+      - "9000:9000"
+    environment:
+      SONAR_ES_BOOTSTRAP_CHECKS_DISABLE: "true"
+    volumes:
+      - sonarqube_data:/opt/sonarqube/data
+      - sonarqube_extensions:/opt/sonarqube/extensions
+      - sonarqube_logs:/opt/sonarqube/logs
+    restart: unless-stopped
+
+volumes:
+  sonarqube_data:
+  sonarqube_extensions:
+  sonarqube_logs:

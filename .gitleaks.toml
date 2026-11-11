@@ -1,0 +1,15 @@
+# Configuração do gitleaks (carregada automaticamente nesta pasta)
+# Usa as regras padrão e ignora apenas pastas geradas / de ferramentas.
+title = "lab-inseguro"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Pastas geradas (relatórios, dependências, scripts de scan)"
+paths = [
+  '''(^|/)reports/''',
+  '''(^|/)node_modules/''',
+  '''(^|/)vendor/''',
+  '''(^|/)scans/''',
+]

@@ -1,0 +1,15 @@
+{
+  "name": "lab-inseguro",
+  "version": "1.0.0",
+  "description": "Lab didatico SDLC - dependencias intencionalmente vulneraveis (SCA: Trivy, npm audit, retire.js)",
+  "private": true,
+  "dependencies": {
+    "jquery": "1.7.2",
+    "lodash": "4.17.4",
+    "minimist": "0.0.8",
+    "axios": "0.18.0",
+    "handlebars": "4.0.5",
+    "marked": "0.3.6",
+    "node-fetch": "2.6.0"
+  }
+}

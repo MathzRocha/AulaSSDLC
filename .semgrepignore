@@ -1,0 +1,8 @@
+# Pastas ignoradas pelo Semgrep
+node_modules/
+vendor/
+reports/
+scans/
+lab.sqlite
+package-lock.json
+composer.lock

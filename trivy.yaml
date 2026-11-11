@@ -1,0 +1,11 @@
+# Configuração do Trivy (carregada automaticamente quando rodado nesta pasta)
+scan:
+  skip-dirs:
+    - node_modules
+    - vendor
+    - reports
+    - scans
+  scanners:
+    - vuln
+    - secret
+    - misconfig

@@ -1,0 +1,31 @@
+:root { --bg:#0f172a; --card:#1e293b; --ink:#e2e8f0; --accent:#38bdf8; --danger:#f87171; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: system-ui, sans-serif; background:var(--bg); color:var(--ink); }
+.topbar { display:flex; justify-content:space-between; align-items:center; gap:1rem;
+  padding:.8rem 1.2rem; background:#111827; border-bottom:1px solid #334155; flex-wrap:wrap; }
+.brand { font-weight:700; color:var(--accent); text-decoration:none; font-size:1.1rem; }
+nav { display:flex; gap:1rem; align-items:center; flex-wrap:wrap; }
+nav a { color:var(--ink); text-decoration:none; }
+nav a:hover { color:var(--accent); }
+.who { opacity:.8; font-size:.9rem; }
+.container { max-width:900px; margin:0 auto; padding:1.5rem 1.2rem 4rem; }
+h1 { color:var(--accent); }
+.card { background:var(--card); padding:1.2rem; border-radius:12px; display:flex;
+  flex-direction:column; gap:.7rem; max-width:520px; border:1px solid #334155; }
+label { display:flex; flex-direction:column; gap:.3rem; font-size:.9rem; }
+input, textarea { padding:.55rem; border-radius:8px; border:1px solid #475569;
+  background:#0b1220; color:var(--ink); font:inherit; }
+button { padding:.6rem 1rem; border:0; border-radius:8px; background:var(--accent);
+  color:#04283b; font-weight:700; cursor:pointer; align-self:flex-start; }
+.erro { color:var(--danger); }
+.hint { font-size:.8rem; opacity:.7; }
+.map { width:100%; border-collapse:collapse; margin-top:1rem; }
+.map th, .map td { border:1px solid #334155; padding:.5rem .6rem; text-align:left; font-size:.9rem; }
+.map th { background:#0b1220; }
+.list, .comments { margin-top:1rem; }
+.comment { background:var(--card); border:1px solid #334155; border-radius:10px;
+  padding:.8rem; margin-bottom:.7rem; }
+.comment .date { font-size:.75rem; opacity:.6; margin-left:.5rem; }
+.greet { margin-top:1rem; padding:.6rem; background:#064e3b; border-radius:8px; }
+.foot { text-align:center; padding:1.2rem; opacity:.6; font-size:.8rem; }
+code { background:#0b1220; padding:.1rem .35rem; border-radius:5px; }

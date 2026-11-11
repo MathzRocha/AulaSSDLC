@@ -1,0 +1,5 @@
+node_modules
+vendor
+reports
+scans
+lab\.sqlite
